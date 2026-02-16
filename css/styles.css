@@ -348,7 +348,9 @@ img {
    CTA SECTION
    ================================ */
 .cta-section {
-    background-color: var(--color-terra-cotta);
+    background-image: url('../images/hero-bg-texture.jpg');
+    background-size: cover;
+    background-position: center;
     padding: var(--spacing-xl) 2rem;
     text-align: center;
 }
