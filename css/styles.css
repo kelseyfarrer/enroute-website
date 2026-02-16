@@ -1,6 +1,14 @@
 /* Import Google Fonts - MUST be first */
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=IM+Fell+English+SC&display=swap');
 
+@font-face {
+    font-family: 'Seaker';
+    src: url('../fonts/seaker-regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
 /* ================================
    EN ROUTE STUDIO - STYLES
    ================================ */
@@ -241,11 +249,12 @@ img {
 }
 
 .section-heading {
-    font-size: 1rem;
-    letter-spacing: 0.48px;
+    font-size: 21.184px;
+    letter-spacing: normal;
     margin-bottom: 2rem;
     font-weight: 400;
-    font-family: var(--font-serif);
+    font-family: 'Seaker', var(--font-serif);
+    text-transform: uppercase;
 }
 
 .description {
@@ -347,6 +356,24 @@ img {
 .cta-content {
     max-width: 800px;
     margin: 0 auto;
+    position: relative;
+}
+
+.cta-snake {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 250px;
+    width: auto;
+    opacity: 0.15;
+    z-index: 0;
+}
+
+.cta-text,
+.cta-button {
+    position: relative;
+    z-index: 1;
 }
 
 .cta-text {
