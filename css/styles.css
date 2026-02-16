@@ -87,8 +87,11 @@ img {
    ================================ */
 .header {
     background-color: var(--color-terra-cotta);
-    padding: 2.5rem 2rem;
+    padding: 1.75rem 2rem;
     z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .header-container {
@@ -110,7 +113,7 @@ img {
 }
 
 .logo-img {
-    height: 84px;
+    height: 92px;
     width: auto;
 }
 
