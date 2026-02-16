@@ -84,7 +84,7 @@ img {
    ================================ */
 .header {
     background-color: var(--color-terra-cotta);
-    padding: 1.5rem 2rem;
+    padding: 2.5rem 2rem;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -109,7 +109,7 @@ img {
 }
 
 .logo-img {
-    height: 40px;
+    height: 120px;
     width: auto;
 }
 
@@ -117,8 +117,11 @@ img {
    HERO SECTION
    ================================ */
 .hero {
-    background-color: var(--color-terra-cotta);
-    padding: 3rem 2rem 2rem;
+    background-image: url('../images/hero-bg-texture.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 4rem 2rem 3rem;
     min-height: 80vh;
     display: flex;
     flex-direction: column;
@@ -498,7 +501,7 @@ img {
     }
 
     .logo-img {
-        height: 30px;
+        height: 80px;
     }
 
     .section-heading {
