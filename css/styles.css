@@ -164,6 +164,9 @@ img {
     max-width: 700px;
     margin: 0 auto;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 10;
+    margin-bottom: -20vh;
 }
 
 .hero-image img {
@@ -179,7 +182,7 @@ img {
     background-image: url('../images/textures/ivory-minimalist-bg.png');
     background-size: cover;
     background-blend-mode: soft-light;
-    padding: var(--spacing-lg) 2rem;
+    padding: calc(20vh + 3rem) 2rem var(--spacing-lg);
     text-align: center;
 }
 
