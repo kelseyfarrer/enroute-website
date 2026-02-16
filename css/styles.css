@@ -289,9 +289,14 @@ img {
 }
 
 .approach-images {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.approach-img-composite {
+    width: 100%;
+    height: auto;
 }
 
 .approach-img {
