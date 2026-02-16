@@ -237,6 +237,9 @@ img {
    ================================ */
 .what-we-do {
     background-color: var(--color-warm-beige);
+    background-image: url('../images/textures/ivory-minimalist-bg.png');
+    background-size: cover;
+    background-blend-mode: soft-light;
     padding: var(--spacing-xl) 2rem;
 }
 
@@ -302,6 +305,9 @@ img {
    ================================ */
 .approach {
     background-color: var(--color-warm-beige);
+    background-image: url('../images/textures/ivory-minimalist-bg.png');
+    background-size: cover;
+    background-blend-mode: soft-light;
     padding: var(--spacing-xl) 2rem;
 }
 
