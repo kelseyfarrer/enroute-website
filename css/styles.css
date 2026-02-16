@@ -258,7 +258,7 @@ img {
     margin-bottom: 2rem;
     font-weight: 400;
     font-family: 'Seaker', var(--font-serif);
-    text-transform: uppercase;
+    text-transform: lowercase;
 }
 
 .description {
