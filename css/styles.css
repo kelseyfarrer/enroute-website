@@ -94,12 +94,13 @@ img {
    HEADER
    ================================ */
 .header {
-    background-color: var(--color-terra-cotta);
-    padding: 1.75rem 2rem;
+    background-color: transparent;
+    padding: 2rem 2rem 1.5rem;
     z-index: 1000;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 
 .header-container {
@@ -133,11 +134,11 @@ img {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 4rem 2rem 3rem;
+    padding: 0 2rem 3rem;
     min-height: 80vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
