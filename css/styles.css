@@ -172,9 +172,9 @@ img {
    ================================ */
 .tagline-section {
     background-color: var(--color-warm-beige);
-    background-image: url('../images/textures/ivory-paper-texture-1.png');
+    background-image: url('../images/textures/ivory-minimalist-bg.png');
     background-size: cover;
-    background-blend-mode: multiply;
+    background-blend-mode: soft-light;
     padding: var(--spacing-lg) 2rem;
     text-align: center;
 }
@@ -347,9 +347,9 @@ img {
    ================================ */
 .footer {
     background-color: var(--color-cream);
-    background-image: url('../images/textures/ivory-paper-texture-2.png');
+    background-image: url('../images/textures/ivory-minimalist-bg.png');
     background-size: cover;
-    background-blend-mode: multiply;
+    background-blend-mode: soft-light;
     padding: var(--spacing-lg) 2rem;
     text-align: center;
 }

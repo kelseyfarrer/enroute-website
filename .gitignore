@@ -26,3 +26,6 @@ temp/
 # Node modules (if you add any build tools later)
 node_modules/
 .claude/
+node_modules/
+package.json
+package-lock.json
