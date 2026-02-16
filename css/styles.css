@@ -442,10 +442,11 @@ img {
 }
 
 .footer-cta {
-    display: inline-block;
+    display: block;
+    width: fit-content;
+    margin: 0 auto 1.5rem;
     padding: 0.75rem 2rem;
     border: 2px solid var(--color-text-dark);
-    margin-bottom: 2rem;
     font-size: 1rem;
     letter-spacing: 0.1em;
     transition: all 0.3s ease;
@@ -458,8 +459,9 @@ img {
 }
 
 .social-link {
-    display: inline-block;
-    margin-bottom: 2rem;
+    display: block;
+    margin: 0 auto 2rem;
+    width: fit-content;
 }
 
 .social-link svg {
