@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact En Route Studio for interior design and event design services in Los Angeles">
+    <title>CONTACT | EN ROUTE STUDIO</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo-link">
+                <img src="images/brand/en-route-studio-logo.png" alt="En Route Studio" class="logo-img">
+            </a>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="contact-container">
+
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <h2 class="contact-heading">EN ROUTE STUDIO</h2>
+
+                <div class="info-block">
+                    <p><strong>Email:</strong> <a href="mailto:kelsey@enroute.design">kelsey@enroute.design</a></p>
+                    <p><strong>Instagram:</strong> <a href="https://instagram.com/enroute_design" target="_blank">@enroute_design</a></p>
+                    <p><strong>Location:</strong> Los Angeles, CA</p>
+                </div>
+
+                <div class="collaborations">
+                    <h3>COLLABORATIONS</h3>
+                    <p>We're always looking for passionate creatives to collaborate with. For all inquiries, please send your portfolio to <a href="mailto:kelsey@enroute.design">kelsey@enroute.design</a>.</p>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form-wrapper">
+                <form class="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                    <!-- Netlify bot field -->
+                    <input type="hidden" name="form-name" value="contact">
+                    <p style="display: none;">
+                        <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+                    </p>
+
+                    <!-- Name Fields -->
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="first-name">First Name <span class="required">(required)</span></label>
+                            <input type="text" id="first-name" name="first-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="last-name">Last Name <span class="required">(required)</span></label>
+                            <input type="text" id="last-name" name="last-name" required>
+                        </div>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="form-group">
+                        <label for="email">Email <span class="required">(required)</span></label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <!-- Newsletter Signup -->
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="newsletter" value="yes">
+                            <span>Sign up for news and updates</span>
+                        </label>
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="form-group">
+                        <label for="phone">Phone <span class="required">(required)</span></label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+
+                    <!-- Subject -->
+                    <div class="form-group">
+                        <label for="subject">Subject <span class="required">(required)</span></label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+
+                    <!-- Message -->
+                    <div class="form-group">
+                        <label for="message">Message <span class="required">(required)</span></label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <img src="images/brand/snake-illustration.png" alt="" class="footer-snake" aria-hidden="true">
+            <img src="images/brand/en-route-studio-carnelian.png" alt="En Route Studio" class="footer-logo-img">
+            <p class="footer-email">kelsey@enroute.design</p>
+            <a href="https://calendly.com/kelsey-enroute/30min" target="_blank" class="footer-cta">BOOK A CALL</a>
+            <a href="https://instagram.com/enroute_design" target="_blank" class="social-link" aria-label="Instagram">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+            </a>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

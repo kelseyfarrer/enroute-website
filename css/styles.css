@@ -1,0 +1,551 @@
+/* ================================
+   EN ROUTE STUDIO - STYLES
+   ================================ */
+
+/* CSS Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Colors from En Route Design */
+    --color-terra-cotta: #3E1813;
+    --color-warm-beige: #E1DDD0;
+    --color-cream: #C9BEAD;
+    --color-text-dark: #0D0D0D;
+    --color-white: #FFFFFF;
+    --color-overlay: rgba(13, 13, 13, 0.5);
+
+    /* Fonts */
+    --font-serif: 'Cormorant Garamond', 'EB Garamond', Georgia, serif;
+    --font-sans: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+
+    /* Spacing */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 4rem;
+    --spacing-xl: 6rem;
+
+    /* Container */
+    --max-width: 1400px;
+}
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@300;400;500&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    font-family: var(--font-serif);
+    color: var(--color-text-dark);
+    line-height: 1.6;
+    background-color: var(--color-white);
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+em {
+    font-style: italic;
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: opacity 0.3s ease;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ================================
+   HEADER
+   ================================ */
+.header {
+    background-color: var(--color-terra-cotta);
+    padding: 1.5rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    text-align: center;
+}
+
+.logo {
+    font-size: 2rem;
+    letter-spacing: 0.2em;
+    color: var(--color-warm-beige);
+    font-weight: 300;
+    font-family: var(--font-serif);
+}
+
+.logo-link {
+    display: inline-block;
+}
+
+.logo-img {
+    height: 40px;
+    width: auto;
+}
+
+/* ================================
+   HERO SECTION
+   ================================ */
+.hero {
+    background-color: var(--color-terra-cotta);
+    padding: 3rem 2rem 2rem;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    max-width: var(--max-width);
+    width: 100%;
+    margin: 0 auto;
+}
+
+.hero-tagline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    color: var(--color-warm-beige);
+    font-style: italic;
+    font-size: 1.2rem;
+    flex-wrap: wrap;
+}
+
+.tagline-graphic {
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+}
+
+.tagline-divider {
+    width: 200px;
+    height: 1px;
+    background-color: var(--color-warm-beige);
+}
+
+.hero-image {
+    max-width: 700px;
+    margin: 0 auto;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+}
+
+/* ================================
+   TAGLINE SECTION
+   ================================ */
+.tagline-section {
+    background-color: var(--color-warm-beige);
+    background-image: url('../images/textures/ivory-paper-texture-1.png');
+    background-size: cover;
+    background-blend-mode: multiply;
+    padding: var(--spacing-lg) 2rem;
+    text-align: center;
+}
+
+.section-tagline {
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-description {
+    max-width: 900px;
+    margin: 0 auto 2rem;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.cta-link {
+    display: inline-block;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--color-text-dark);
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+    transition: all 0.3s ease;
+}
+
+.cta-link:hover {
+    opacity: 1;
+    border-bottom-color: var(--color-terra-cotta);
+    color: var(--color-terra-cotta);
+}
+
+/* ================================
+   WHAT WE DO SECTION
+   ================================ */
+.what-we-do {
+    background-color: var(--color-warm-beige);
+    padding: var(--spacing-xl) 2rem;
+}
+
+.content-grid {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.section-heading {
+    font-size: 2.5rem;
+    letter-spacing: 0.1em;
+    margin-bottom: 2rem;
+    font-weight: 300;
+    font-family: var(--font-serif);
+}
+
+.description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.text-link {
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: 1rem;
+    padding-bottom: 0.25rem;
+    border-bottom: 1px solid var(--color-text-dark);
+    transition: all 0.3s ease;
+}
+
+.text-link:hover {
+    opacity: 1;
+    color: var(--color-terra-cotta);
+    border-bottom-color: var(--color-terra-cotta);
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.gallery-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* ================================
+   APPROACH SECTION
+   ================================ */
+.approach {
+    background-color: var(--color-warm-beige);
+    padding: var(--spacing-xl) 2rem;
+}
+
+.approach-grid {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.approach-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.approach-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.approach-img-3 {
+    grid-column: 1 / -1;
+    height: 200px;
+}
+
+/* ================================
+   CTA SECTION
+   ================================ */
+.cta-section {
+    background-color: var(--color-terra-cotta);
+    padding: var(--spacing-xl) 2rem;
+    text-align: center;
+}
+
+.cta-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cta-text {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: var(--color-warm-beige);
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    color: var(--color-warm-beige);
+    border-bottom: 2px solid var(--color-warm-beige);
+    font-size: 1.1rem;
+    letter-spacing: 0.05em;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    opacity: 1;
+    background-color: rgba(225, 221, 208, 0.1);
+    transform: translateY(-2px);
+}
+
+/* ================================
+   FOOTER
+   ================================ */
+.footer {
+    background-color: var(--color-cream);
+    background-image: url('../images/textures/ivory-paper-texture-2.png');
+    background-size: cover;
+    background-blend-mode: multiply;
+    padding: var(--spacing-lg) 2rem;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    font-size: 2rem;
+    letter-spacing: 0.2em;
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+}
+
+.footer-logo-img {
+    height: 35px;
+    width: auto;
+    margin: 0 auto 1.5rem;
+}
+
+.footer-snake {
+    width: 60px;
+    height: auto;
+    margin: 0 auto 2rem;
+    opacity: 0.8;
+}
+
+.footer-email {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.footer-cta {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    border: 2px solid var(--color-text-dark);
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+    transition: all 0.3s ease;
+}
+
+.footer-cta:hover {
+    opacity: 1;
+    background-color: var(--color-text-dark);
+    color: var(--color-cream);
+}
+
+.social-link {
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+
+.social-link svg {
+    transition: transform 0.3s ease;
+}
+
+.social-link:hover svg {
+    transform: scale(1.1);
+}
+
+/* Email Signup */
+.email-signup {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(13, 13, 13, 0.2);
+}
+
+.signup-text {
+    font-style: italic;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.email-input {
+    padding: 0.75rem 1rem;
+    border: 1px solid rgba(13, 13, 13, 0.3);
+    background-color: transparent;
+    font-family: var(--font-serif);
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.email-input:focus {
+    outline: none;
+    border-color: var(--color-text-dark);
+}
+
+.submit-button {
+    padding: 0.75rem 2rem;
+    background-color: transparent;
+    border: 1px solid var(--color-text-dark);
+    cursor: pointer;
+    font-family: var(--font-serif);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: var(--color-text-dark);
+    color: var(--color-cream);
+}
+
+/* ================================
+   RESPONSIVE DESIGN
+   ================================ */
+@media (max-width: 968px) {
+    .content-grid,
+    .approach-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .image-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .approach-images {
+        order: 2;
+    }
+
+    .approach-text {
+        order: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    :root {
+        --spacing-lg: 3rem;
+        --spacing-xl: 4rem;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+        letter-spacing: 0.15em;
+    }
+
+    .logo-img {
+        height: 30px;
+    }
+
+    .section-heading {
+        font-size: 2rem;
+    }
+
+    .section-tagline {
+        font-size: 1.5rem;
+    }
+
+    .hero-tagline {
+        font-size: 1rem;
+        gap: 1rem;
+    }
+
+    .tagline-divider {
+        width: 100px;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+
+    .approach-images {
+        grid-template-columns: 1fr;
+    }
+
+    .approach-img-3 {
+        grid-column: 1;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 1rem;
+    }
+
+    .hero {
+        padding: 2rem 1rem;
+    }
+
+    .hero-tagline {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .tagline-divider {
+        width: 50px;
+    }
+}
