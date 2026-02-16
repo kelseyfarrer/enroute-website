@@ -44,14 +44,17 @@ html {
 body {
     font-family: var(--font-serif);
     color: var(--color-text-dark);
-    line-height: 1.6;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.48px;
     background-color: var(--color-white);
 }
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
-    line-height: 1.2;
+    line-height: 1.5;
+    letter-spacing: 0.48px;
 }
 
 p {
@@ -60,7 +63,7 @@ p {
 
 em {
     font-style: italic;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 a {
@@ -181,9 +184,9 @@ img {
 }
 
 .section-tagline {
-    font-size: 2rem;
+    font-size: 1rem;
     font-style: italic;
-    font-weight: 300;
+    font-weight: 400;
     margin-bottom: 2rem;
     max-width: 800px;
     margin-left: auto;
@@ -193,8 +196,8 @@ img {
 .main-description {
     max-width: 900px;
     margin: 0 auto 2rem;
-    font-size: 1.1rem;
-    line-height: 1.8;
+    font-size: 1rem;
+    line-height: 1.5;
 }
 
 .cta-link {
@@ -230,16 +233,16 @@ img {
 }
 
 .section-heading {
-    font-size: 2.5rem;
-    letter-spacing: 0.1em;
+    font-size: 1rem;
+    letter-spacing: 0.48px;
     margin-bottom: 2rem;
-    font-weight: 300;
+    font-weight: 400;
     font-family: var(--font-serif);
 }
 
 .description {
-    font-size: 1.1rem;
-    line-height: 1.8;
+    font-size: 1rem;
+    line-height: 1.5;
     margin-bottom: 1.5rem;
 }
 
@@ -259,9 +262,9 @@ img {
 }
 
 .image-gallery {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .gallery-img-composite {
@@ -299,6 +302,14 @@ img {
     justify-content: center;
 }
 
+.approach-text {
+    text-align: right;
+}
+
+.approach-text .text-link {
+    float: right;
+}
+
 .approach-img-composite {
     width: 100%;
     height: auto;
@@ -331,7 +342,7 @@ img {
 }
 
 .cta-text {
-    font-size: 1.5rem;
+    font-size: 1.12rem;
     font-style: italic;
     color: var(--color-warm-beige);
     margin-bottom: 2rem;
@@ -342,8 +353,8 @@ img {
     padding: 0.75rem 2rem;
     color: var(--color-warm-beige);
     border-bottom: 2px solid var(--color-warm-beige);
-    font-size: 1.1rem;
-    letter-spacing: 0.05em;
+    font-size: 1rem;
+    letter-spacing: 0.48px;
     transition: all 0.3s ease;
 }
 
